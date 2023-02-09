@@ -85,3 +85,10 @@ window.onload = () => {
     saveScore();
   }
 };
+
+// Extra - resetar placar
+const resetScorebtn = document.getElementById('reset-score');
+resetScorebtn.addEventListener('click', () => {
+  pScore.innerText = '0';
+  saveScore();
+})
